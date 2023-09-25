@@ -4,7 +4,17 @@ Facebook Group Widget is a React (vite) function component using axios to fetch 
 
 # Clone & Install:
 
-Create an `.env` file in the project root directory and add an unique `VITE_FBOOK_ACCESS_TOKEN =` provided from facebook. As of October 2023, you need to create a [Facebook app](https://developers.facebook.com/apps/) with Business verification to get the following permissions: `groups_show_list`, `groups_access_member_info`, `public_profile`. Check the [Facebook documentation](https://developers.facebook.com/docs/facebook-login/guides/access-tokens/get-long-lived/) on how to get a Get a Long-Lived User Access Token that will extend the duration of an access token beyond the default 60-day expiration period.
+Clone the repository:
+
+`git clone https://github.com/ibh2511/Facebook-Group-Widget.git`
+
+Install and run repository locally:
+
+`cd Facebook-Group-Widget`
+`npm install`
+`npm run dev`
+
+Create an `.env` file in the project root directory and add an unique `VITE_FBOOK_ACCESS_TOKEN =` provided from facebook. As of October 2023, you need to create a [Facebook app](https://developers.facebook.com/apps/) to get the following permissions: `groups_show_list`, `groups_access_member_info`, `public_profile`. Check the [Facebook documentation](https://developers.facebook.com/docs/facebook-login/guides/access-tokens/get-long-lived/) on how to get a Get a Long-Lived User Access Token that will extend the duration of an access token beyond the default 60-day expiration period.
 
 Use the component like this:
 
