@@ -4,8 +4,7 @@
 - This creates a stand alone widget for displaying Facebook group info with a "Join now" button on a React web page.
 - Customize primary and secondary colors and font-type in the `tailwind.config.css`, as well as group title, member text, button text, group title and width (in pixels) as arguments to the `<FacebookGroup/>` component.
 
-![Facebook Group Widget](/public/Facebook-Group-Widget.png)
-{: .center}
+&emsp;&emsp;&emsp;&emsp;![Facebook Group Widget](/public/Facebook-Group-Widget.png)
 
 # Clone & Install:
 
