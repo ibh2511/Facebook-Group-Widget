@@ -10,15 +10,13 @@
 
 1. Clone the repository:
 
-`git clone https://github.com/ibh2511/Facebook-Group-Widget.git`
+> `git clone https://github.com/ibh2511/Facebook-Group-Widget.git`
 
 2. Install and run repository locally:
 
-`cd Facebook-Group-Widget`
-<br>
-`npm install`
-<br>
-`npm run dev`
+> `cd Facebook-Group-Widget`
+> <br> > `npm install`
+> <br> > `npm run dev`
 
 3. Create an `.env` file in the project root directory and add an unique access token `VITE_FBOOK_ACCESS_TOKEN =` provided from facebook. As of October 2023, you need to create a [Facebook app](https://developers.facebook.com/apps/) to select the following permissions:
 
@@ -26,7 +24,7 @@
 - `groups_access_member_info`
 - `public_profile`
 
-(To retrieve user data fields like `member_count` for any public group, ==the access token needs to come from an admin user== of that particular group, not just a general user token.)
+> (To retrieve user data fields like `member_count` for any public group, ==the access token needs to come from an admin user== of that particular group, not just a general user token.)
 
 4. Check the [Facebook documentation](https://developers.facebook.com/docs/facebook-login/guides/access-tokens/get-long-lived/) on how to get a **Get a Long-Lived User Access Token** that will extend the duration of an access token beyond the default 60-day expiration period.
 
