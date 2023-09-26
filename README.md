@@ -4,7 +4,7 @@
 - This creates a stand alone widget for displaying Facebook group info with a "Join now" button on a React web page.
 - Customize primary and secondary colors and font-type in the `tailwind.config.css`, as well as group title, member text, button text, group title and width (in pixels) as arguments to the `<FacebookGroup/>` component.
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![Facebook Group Widget](/public/Facebook-Group-Widget.png)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![Facebook Group Widget](/public/Facebook-Group-Widget.png)
 
 # Clone & Install:
 
@@ -26,7 +26,7 @@
 &emsp;&emsp; `groups_access_member_info`
 &emsp;&emsp; `public_profile`
 
-&emsp;&emsp;(To retrieve user data fields like `member_count` for any public group, ==the access token needs to come from an admin user== of that particular group, not just a general user token.)
+&emsp;&emsp;(To retrieve user data fields like `member_count` for any public group, _the access token needs to come from an admin user of that particular group_, not just a general user token.)
 
 4. Check the [Facebook documentation](https://developers.facebook.com/docs/facebook-login/guides/access-tokens/get-long-lived/) on how to get a **Get a Long-Lived User Access Token** that will extend the duration of an access token beyond the default 60-day expiration period.
 
