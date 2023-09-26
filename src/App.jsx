@@ -5,9 +5,11 @@ function App() {
   return (
     <>
       <FacebookGroup
-        groupID="123456789123456"
+        groupID="236619620289936"
+        groupTitle="Custom title"
         memberText="Supporters"
         btnText="Sign Up"
+        width="400px"
       />
     </>
   )

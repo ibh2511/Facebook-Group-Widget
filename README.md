@@ -1,25 +1,51 @@
 # Facebook Group Widget
 
-Facebook Group Widget is a React (vite) function component using axios to fetch the fields group `member_count`, `cover photo`, `group title` from the Facebook API based on the group id. This creates a stand alone widget for displaying Facebook group info with a "Join now" button on a web page. Customize primary and secondary colors and font-type in the `tailwind.config.css`, as well as member text and button text as arguments to the component.
+- **Facebook Group Widget** is a React (vite) function component using axios to fetch the group fields: `member_count`, `cover photo`, `group title` from the [Facebook Graph API v.18.0](https://developers.facebook.com/docs/graph-api) based on a spesific public group id.
+- This creates a stand alone widget for displaying Facebook group info with a "Join now" button on a React web page.
+- Customize primary and secondary colors and font-type in the `tailwind.config.css`, as well as group title, member text, button text, group title and width (in pixels) as arguments to the <FacebookGroup/> component.
 
 # Clone & Install:
 
-Clone the repository:
+1. Clone the repository:
 
 `git clone https://github.com/ibh2511/Facebook-Group-Widget.git`
 
-Install and run repository locally:
+2. Install and run repository locally:
 
 `cd Facebook-Group-Widget`
 `npm install`
 `npm run dev`
 
-Create an `.env` file in the project root directory and add an unique `VITE_FBOOK_ACCESS_TOKEN =` provided from facebook. As of October 2023, you need to create a [Facebook app](https://developers.facebook.com/apps/) to get the following permissions: `groups_show_list`, `groups_access_member_info`, `public_profile`. Check the [Facebook documentation](https://developers.facebook.com/docs/facebook-login/guides/access-tokens/get-long-lived/) on how to get a Get a Long-Lived User Access Token that will extend the duration of an access token beyond the default 60-day expiration period.
+3. Create an `.env` file in the project root directory and add an unique access token `VITE_FBOOK_ACCESS_TOKEN =` provided from facebook. As of October 2023, you need to create a [Facebook app](https://developers.facebook.com/apps/) to select the following permissions:
 
-Use the component like this:
+- `groups_show_list`
+- `groups_access_member_info`
+- `public_profile`
 
-`       <FacebookGroup
-        groupID="123456789123456"
+(To retrieve user data fields like `member_count` for any public group, the access token needs to come from an admin user of that particular group, not just a general user token.)
+
+4. Check the [Facebook documentation](https://developers.facebook.com/docs/facebook-login/guides/access-tokens/get-long-lived/) on how to get a **Get a Long-Lived User Access Token** that will extend the duration of an access token beyond the default 60-day expiration period.
+
+# Example:
+
+````javascript
+import FacebookGroup from "./FacebookGroup"
+import "./index.css"
+
+function App() {
+  return (
+    <>
+      <FacebookGroup
+        groupID="236619620289936"
+        groupTitle="Custom title"
         memberText="Supporters"
         btnText="Sign Up"
-      />`
+        width="400px"
+
+      />
+    </>
+  )
+}
+
+export default App```
+````
